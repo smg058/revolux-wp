@@ -1,0 +1,172 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.3.4/schema.json",
+	"vcs": {
+		"enabled": false,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"files": {
+		"ignoreUnknown": false
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab",
+		"indentWidth": 4,
+		"lineWidth": 180
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"a11y": {
+				"noAccessKey": "error",
+				"noAriaHiddenOnFocusable": "error",
+				"noAriaUnsupportedElements": "error",
+				"noAutofocus": "error",
+				"noHeaderScope": "error",
+				"noDistractingElements": "error",
+				"noInteractiveElementToNoninteractiveRole": "error",
+				"noLabelWithoutControl": "error",
+				"noNoninteractiveElementToInteractiveRole": "error",
+				"noNoninteractiveTabindex": "error",
+				"noPositiveTabindex": "error",
+				"noRedundantAlt": "error",
+				"noRedundantRoles": "error",
+				"noStaticElementInteractions": "error",
+				"noSvgWithoutTitle": "warn",
+				"useAltText": "error",
+				"useAnchorContent": "error",
+				"useButtonType": "error",
+				"useFocusableInteractive": "error",
+				"useHeadingContent": "error",
+				"useHtmlLang": "error",
+				"useIframeTitle": "error",
+				"useMediaCaption": "error",
+				"useSemanticElements": "error",
+				"useValidAriaProps": "error",
+				"useValidAriaRole": "error",
+				"useValidAutocomplete": "error",
+				"useValidLang": "error",
+				"useGenericFontNames": "error"
+			},
+			"complexity": {
+				"useLiteralKeys": "info",
+				"noUselessUndefinedInitialization": "error",
+				"noCommaOperator": "warn",
+				"noUselessTernary": "error",
+				"noVoid": "off",
+				"useArrowFunction": "error",
+				"noImportantStyles": "error"
+			},
+			"correctness": {
+				"noUndeclaredVariables": "error",
+				"noUnusedVariables": "warn",
+				"noUnreachable": "error",
+				"useValidTypeof": "error",
+				"noConstAssign": "error",
+				"noNodejsModules": "off",
+				"noSelfAssign": "error",
+				"noStringCaseMismatch": "error",
+				"noInvalidDirectionInLinearGradient": "error",
+				"noUnknownFunction": "error",
+				"noUnknownProperty": "error",
+				"noUnknownPseudoClass": "error",
+				"noUnknownPseudoElement": "error",
+				"noUnknownUnit": "error"
+			},
+			"nursery": {
+				"noShadow": "error",
+				"noUnusedExpressions": "error",
+				"noEmptySource": "off"
+			},
+			"performance": {},
+			"security": {
+				"noGlobalEval": "error",
+				"noBlankTarget": "error"
+			},
+			"style": {
+				"useCollapsedElseIf": "error",
+				"noNestedTernary": "error",
+				"noUselessElse": "error",
+				"useConst": "error",
+				"noYodaExpression": "info",
+				"noUnusedTemplateLiteral": "error",
+				"useImportType": "error",
+				"useTemplate": "error"
+			},
+			"suspicious": {
+				"noArrayIndexKey": "off",
+				"noVar": "error",
+				"noAssignInExpressions": "error",
+				"noConsole": {
+					"options": {
+						"allow": [
+							"assert",
+							"error",
+							"info",
+							"warn"
+						]
+					}
+				},
+				"noDoubleEquals": "error",
+				"noBitwiseOperators": {
+					"options": {
+						"allow": [
+							"^"
+						]
+					}
+				},
+				"useIterableCallbackReturn": "off",
+				"noDebugger": "warn",
+				"noDuplicateParameters": "error",
+				"noDuplicateObjectKeys": "error",
+				"noDuplicateCase": "error",
+				"noRedeclare": "error",
+				"noUnsafeNegation": "error",
+				"noAlert": "error",
+				"noCompareNegZero": "error",
+				"noEmptyBlockStatements": "off",
+				"noImportAssign": "error",
+				"noDuplicateAtImportRules": "error",
+				"noEmptyBlock": "off",
+				"noImportantInKeyframe": "error",
+				"noShorthandPropertyOverrides": "error",
+				"noUnknownAtRules": "error",
+				"noUselessEscapeInString": "off"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"enabled": true,
+			"quoteStyle": "single",
+			"jsxQuoteStyle": "double",
+			"indentStyle": "space",
+			"indentWidth": 2,
+			"semicolons": "asNeeded",
+			"trailingCommas": "es5"
+		}
+	},
+	"css": {
+		"formatter": {
+			"enabled": true,
+			"quoteStyle": "double",
+			"indentStyle": "space",
+			"indentWidth": 2
+		}
+	},
+	"json": {
+		"formatter": {
+			"enabled": true,
+			"trailingCommas": "none"
+		}
+	},
+	"assist": {
+		"enabled": true,
+		"actions": {
+			"source": {
+				"organizeImports": "on"
+			}
+		}
+	}
+}

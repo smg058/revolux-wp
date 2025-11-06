@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress.Revolux">
+	<description>Revolux Theme Coding Standards</description>
+
+	<!-- Set the memory limit to 256M.
+		 For most standard PHP configurations, this means the memory limit will temporarily be raised.
+		 Ref: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage#specifying-phpini-settings
+	-->
+	<ini name="memory_limit" value="256M"/>
+
+	<!-- Whenever possible, cache the scan results and re-use those for unchanged files on the next scan. -->
+	<arg name="cache"/>
+
+	<!-- Strip the filepaths down to the relevant bit. -->
+	<arg name="basepath" value="./"/>
+
+	<!-- Check up to 20 files simultaneously. -->
+	<arg name="parallel" value="20"/>
+
+	<!-- Show sniff codes in all reports. -->
+	<arg value="ps"/>
+
+	<!-- Use WordPress "Extra" Coding Standards. -->
+	<rule ref="WordPress-Extra">
+		<!-- Allow short array syntax -->
+		<exclude name="Universal.Arrays.DisallowShortArraySyntax.Found"/>
+		<!-- Allow short prefixes -->
+		<exclude name="WordPress.NamingConventions.PrefixAllGlobals.ShortPrefixPassed"/>
+
+		<!-- Additional Excludes -->
+		<exclude name="Generic.Commenting.DocComment.MissingShort"/>
+		<exclude name="Generic.Formatting.MultipleStatementAlignment"/>
+		<exclude name="Squiz.Commenting.ClassComment.Missing"/>
+		<exclude name="Squiz.Commenting.FunctionComment.Missing"/>
+		<exclude name="Squiz.Commenting.FileComment.Missing"/>
+		<exclude name="Squiz.Commenting.FunctionComment.MissingParamComment"/>
+		<exclude name="Squiz.Commenting.VariableComment.Missing"/>
+		<exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeOpen"/>
+		<exclude name="Squiz.PHP.EmbeddedPhp.ContentAfterOpen"/>
+		<exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeEnd"/>
+		<exclude name="Squiz.PHP.EmbeddedPhp.ContentAfterEnd"/>
+		<exclude name="WordPress.Arrays.MultipleStatementAlignment"/>
+		<exclude name="WordPress.CSRF.NonceVerification.NoNonceVerification"/>
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
+		<exclude name="WordPress.Security.NonceVerification.NoNonceVerification"/>
+		<exclude name="WordPress.Security.NonceVerification.Missing"/>
+		<exclude name="WordPress.WP.I18n.MissingTranslatorComment"/>
+		<exclude name="WordPress.WP.I18n.NonSingularStringLiteralSingle"/>
+		<exclude name="WordPress.WP.I18n.NonSingularStringLiteralPlural"/>
+		<exclude name="WordPress.WP.EnqueuedResources.NonEnqueuedStylesheet"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
+	</rule>
+
+	<!-- Use WordPress "Docs" Coding Standards -->
+	<rule ref="WordPress-Docs"/>
+
+	<!-- The minimum supported WordPress version. This should match what's listed in style.css. -->
+	<rule ref="WordPress.WP.DeprecatedFunctions">
+		<properties>
+			<property name="minimum_wp_version" value="6.0"/>
+		</properties>
+	</rule>
+
+	<!-- Allow for theme specific exceptions to the file name rules based on the theme hierarchy. -->
+	<rule ref="WordPress.Files.FileName">
+		<properties>
+			<property name="is_theme" value="true"/>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions.ValidHookName">
+		<properties>
+			<property name="additionalWordDelimiters" value="/-"/>
+		</properties>
+	</rule>
+
+	<!-- Verify that everything in the global namespace is prefixed with a theme specific prefix.
+		 Multiple valid prefixes can be provided as a comma-delimited list. -->
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array" value="Revolux\Core,Revolux\,rev,revolux,chayson"/>
+		</properties>
+	</rule>
+
+	<!-- Verify that the text_domain is set to the desired text-domain.
+		 Multiple valid text domains can be provided as a comma-delimited list. -->
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array" value="revolux"/>
+		</properties>
+	</rule>
+
+	<!-- Use WordPress PHP Compatibility. -->
+	<rule ref="PHPCompatibilityWP"/>
+
+	<!-- WordPress Core PHP Support -->
+	<config name="testVersion" value="8.1-"/>
+
+	<!-- Only sniff PHP files. -->
+	<arg name="extensions" value="php"/>
+
+	<!-- Only sniff the theme. -->
+	<file>./</file>
+
+	<!-- Don't sniff the following directories or file types. -->
+	<exclude-pattern>/assets/*</exclude-pattern>
+	<exclude-pattern>/node_modules/*</exclude-pattern>
+	<exclude-pattern>/vendor/*</exclude-pattern>
+	<exclude-pattern>/build/*</exclude-pattern>
+	<exclude-pattern>/tests/*.php</exclude-pattern>
+</ruleset>

@@ -1,0 +1,13 @@
+// --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//  Banner Mixin
+// --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+@mixin revBanner($file, $ver: "0.1.0") {
+  /*!
+   * Revolux #{$file} v#{$ver} (https://revolux.chayson.com/)
+   *
+   * Copyright (c) 2016-2025 Chayson. All rights reserved.
+   * License: GNU General Public License v2 or later.
+   * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+   */
+}

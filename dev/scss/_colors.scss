@@ -1,0 +1,939 @@
+// --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+// Colors
+// --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+// Blue
+$blue:               #1974fa !default;
+$blue-50:            #eff6ff !default;
+$blue-100:           #dbeafe !default;
+$blue-200:           #bfdbfe !default;
+$blue-300:           #93c5fd !default;
+$blue-400:           #60a5fa !default;
+$blue-500:           $blue !default;
+$blue-600:           #2563eb !default;
+$blue-700:           #1d4ed8 !default;
+$blue-800:           #1e40af !default;
+$blue-900:           #1e3a8a !default;
+$blue-950:           #172554 !default;
+
+// Indigo
+$indigo:             #6a58f2 !default;
+$indigo-50:          #f7f6ff !default;
+$indigo-100:         #eceaff !default;
+$indigo-200:         #d6d1ff !default;
+$indigo-300:         #b3aaff !default;
+$indigo-400:         #8f82ff !default;
+$indigo-500:         $indigo !default;
+$indigo-600:         #5d4ed9 !default;
+$indigo-700:         #4a3eb3 !default;
+$indigo-800:         #372e8c !default;
+$indigo-900:         #241e66 !default;
+$indigo-950:         #120f33 !default;
+
+// Purple
+$purple:             #8a3dd4 !default;
+$purple-50:          #fbf7ff !default;
+$purple-100:         #f4eaff !default;
+$purple-200:         #e4cefb !default;
+$purple-300:         #cfa3f6 !default;
+$purple-400:         #b679f0 !default;
+$purple-500:         $purple !default;
+$purple-600:         #7936bb !default;
+$purple-700:         #622c96 !default;
+$purple-800:         #4a2170 !default;
+$purple-900:         #32174a !default;
+$purple-950:         #190c25 !default;
+
+// Pink
+$pink:               #d93f8b !default;
+$pink-50:            #fff5f9 !default;
+$pink-100:           #ffe6f0 !default;
+$pink-200:           #ffcce0 !default;
+$pink-300:           #ff99c2 !default;
+$pink-400:           #ff66a3 !default;
+$pink-500:           $pink !default;
+$pink-600:           #c2367c !default;
+$pink-700:           #9b2c64 !default;
+$pink-800:           #74234c !default;
+$pink-900:           #4d1933 !default;
+$pink-950:           #260c1a !default;
+
+// Red
+$red:                #ed4242 !default;
+$red-50:             #fff5f5 !default;
+$red-100:            #ffe6e6 !default;
+$red-200:            #ffcccc !default;
+$red-300:            #ff9999 !default;
+$red-400:            #ff6666 !default;
+$red-500:            $red !default;
+$red-600:            #d63a3a !default;
+$red-700:            #ad2f2f !default;
+$red-800:            #852424 !default;
+$red-900:            #5c1919 !default;
+$red-950:            #2e0d0d !default;
+
+// Orange
+$orange:             #fd6914 !default;
+$orange-50:          #fff8f3 !default;
+$orange-100:         #ffeede !default;
+$orange-200:         #ffd7b8 !default;
+$orange-300:         #ffb777 !default;
+$orange-400:         #ff9644 !default;
+$orange-500:         $orange !default;
+$orange-600:         #e35d12 !default;
+$orange-700:         #bb4c0f !default;
+$orange-800:         #933b0c !default;
+$orange-900:         #6b2909 !default;
+$orange-950:         #341405 !default;
+
+// Yellow
+$yellow:             #ffb507 !default;
+$yellow-50:          #fffdf5 !default;
+$yellow-100:         #fff9db !default;
+$yellow-200:         #fff3b8 !default;
+$yellow-300:         #ffe777 !default;
+$yellow-400:         #ffd844 !default;
+$yellow-500:         $yellow !default;
+$yellow-600:         #e6a505 !default;
+$yellow-700:         #b88304 !default;
+$yellow-800:         #8a6103 !default;
+$yellow-900:         #5c3f02 !default;
+$yellow-950:         #2e2001 !default;
+
+// Green
+$green:              #1f9145 !default;
+$green-50:           #f4fbf6 !default;
+$green-100:          #e0f5e7 !default;
+$green-200:          #bfe8cf !default;
+$green-300:          #8fd6af !default;
+$green-400:          #4fbd82 !default;
+$green-500:          $green !default;
+$green-600:          #1b803d !default;
+$green-700:          #166533 !default;
+$green-800:          #114b27 !default;
+$green-900:          #0c311b !default;
+$green-950:          #06180d !default;
+
+// Teal
+$teal:               #14b88c !default;
+$teal-50:            #f3fcf9 !default;
+$teal-100:           #d6f6eb !default;
+$teal-200:           #adeed7 !default;
+$teal-300:           #7ee4c2 !default;
+$teal-400:           #4ad9ab !default;
+$teal-500:           $teal !default;
+$teal-600:           #11a07a !default;
+$teal-700:           #0d8062 !default;
+$teal-800:           #0a604a !default;
+$teal-900:           #073032 !default;
+$teal-950:           #031817 !default;
+
+// Cyan
+$cyan:               #0db3f0 !default;
+$cyan-50:            #f2fbff !default;
+$cyan-100:           #d6f4fe !default;
+$cyan-200:           #ace9fd !default;
+$cyan-300:           #7edcfc !default;
+$cyan-400:           #4fcffd !default;
+$cyan-500:           $cyan !default;
+$cyan-600:           #0c9bcc !default;
+$cyan-700:           #0979a0 !default;
+$cyan-800:           #075774 !default;
+$cyan-900:           #043548 !default;
+$cyan-950:           #021a24 !default;
+
+// Gray
+$gray:               #a1a1aa !default;
+$gray-50:            #fafafa !default;
+$gray-100:           #f4f4f5 !default;
+$gray-200:           #e4e4e7 !default;
+$gray-300:           #d4d4d8 !default;
+$gray-400:           #a1a1aa !default;
+$gray-500:           $gray !default;
+$gray-600:           #71717a !default;
+$gray-700:           #52525b !default;
+$gray-800:           #3f3f46 !default;
+$gray-900:           #27272a !default;
+$gray-950:           #18181b !default;
+
+// Rose
+$rose:               #e03d59 !default;
+$rose-50:            #fff5f7 !default;
+$rose-100:           #ffe6eb !default;
+$rose-200:           #ffcdd7 !default;
+$rose-300:           #ff99b0 !default;
+$rose-400:           #ff6689 !default;
+$rose-500:           $rose !default;
+$rose-600:           #c83750 !default;
+$rose-700:           #a22c41 !default;
+$rose-800:           #7b2232 !default;
+$rose-900:           #551823 !default;
+$rose-950:           #2a0c11 !default;
+
+// Fuchsia
+$fuchsia:            #d93f8b !default;
+$fuchsia-50:         #fdf2f8 !default;
+$fuchsia-100:        #fce7f3 !default;
+$fuchsia-200:        #fbcfe8 !default;
+$fuchsia-300:        #f9a8d4 !default;
+$fuchsia-400:        #f472b6 !default;
+$fuchsia-500:        $fuchsia !default;
+$fuchsia-600:        #c0267b !default;
+$fuchsia-700:        #9d174d !default;
+$fuchsia-800:        #831843 !default;
+$fuchsia-900:        #701a3f !default;
+$fuchsia-950:        #4a0d28 !default;
+
+// Violet
+$violet:             #6a58f2 !default;
+$violet-50:          #f7f6ff !default;
+$violet-100:         #eceaff !default;
+$violet-200:         #d6d1ff !default;
+$violet-300:         #b3aaff !default;
+$violet-400:         #8f82ff !default;
+$violet-500:         $violet !default;
+$violet-600:         #5d4ed9 !default;
+$violet-700:         #4a3eb3 !default;
+$violet-800:         #372e8c !default;
+$violet-900:         #241e66 !default;
+$violet-950:         #120f33 !default;
+
+// Sky
+$sky:                #0096ff !default;
+$sky-50:             #f0f9ff !default;
+$sky-100:            #e0f2ff !default;
+$sky-200:            #bae6fd !default;
+$sky-300:            #7dd3fc !default;
+$sky-400:            #38bdf8 !default;
+$sky-500:            $sky !default;
+$sky-600:            #0284c7 !default;
+$sky-700:            #0369a1 !default;
+$sky-800:            #075985 !default;
+$sky-900:            #0c4a6e !default;
+$sky-950:            #082f49 !default;
+
+// Emerald
+$emerald:            #10b981 !default;
+$emerald-50:         #ecfdf5 !default;
+$emerald-100:        #d1fae5 !default;
+$emerald-200:        #a7f3d0 !default;
+$emerald-300:        #6ee7b7 !default;
+$emerald-400:        #34d399 !default;
+$emerald-500:        $emerald !default;
+$emerald-600:        #059669 !default;
+$emerald-700:        #047857 !default;
+$emerald-800:        #065f46 !default;
+$emerald-900:        #064e3b !default;
+$emerald-950:        #022c22 !default;
+
+// Lime
+$lime:               #84cc16 !default;
+$lime-50:            #f7fee7 !default;
+$lime-100:           #ecfccb !default;
+$lime-200:           #d9f99d !default;
+$lime-300:           #bef264 !default;
+$lime-400:           #a3e635 !default;
+$lime-500:           $lime !default;
+$lime-600:           #65a30d !default;
+$lime-700:           #4d7c0f !default;
+$lime-800:           #3f6212 !default;
+$lime-900:           #365314 !default;
+$lime-950:           #1a2e05 !default;
+
+// Amber
+$amber:              #ffca28 !default;
+$amber-50:           #fffbeb !default;
+$amber-100:          #fef3c7 !default;
+$amber-200:          #fde68a !default;
+$amber-300:          #fcd34d !default;
+$amber-400:          #fbbf24 !default;
+$amber-500:          $amber !default;
+$amber-600:          #d97706 !default;
+$amber-700:          #b45309 !default;
+$amber-800:          #92400e !default;
+$amber-900:          #78350f !default;
+$amber-950:          #451a03 !default;
+
+// Slate
+$slate:              #8898aa !default;
+
+$slate-50:           #f8fafc !default;
+$slate-100:          #f1f5f9 !default;
+$slate-200:          #e2e8f0 !default;
+$slate-300:          #cbd5e1 !default;
+$slate-400:          #94a3b8 !default;
+$slate-500:          $slate !default;
+$slate-600:          #64748b !default;
+$slate-700:          #475569 !default;
+$slate-800:          #334155 !default;
+$slate-900:          #1e293b !default;
+$slate-950:          #0f172a !default;
+
+// Base colors.
+$white:              #ffffff !default;
+$black:              #000000 !default;
+
+// Color maps
+// @formatter:off
+
+// Blues
+$blues: (
+  "blue-50":  $blue-50,
+  "blue-100": $blue-100,
+  "blue-200": $blue-200,
+  "blue-300": $blue-300,
+  "blue-400": $blue-400,
+  "blue-500": $blue-500,
+  "blue-600": $blue-600,
+  "blue-700": $blue-700,
+  "blue-800": $blue-800,
+  "blue-900": $blue-900,
+  "blue-950": $blue-950
+) !default;
+
+// Indigos
+$indigos: (
+  "indigo-50":  $indigo-50,
+  "indigo-100": $indigo-100,
+  "indigo-200": $indigo-200,
+  "indigo-300": $indigo-300,
+  "indigo-400": $indigo-400,
+  "indigo-500": $indigo-500,
+  "indigo-600": $indigo-600,
+  "indigo-700": $indigo-700,
+  "indigo-800": $indigo-800,
+  "indigo-900": $indigo-900,
+  "indigo-950": $indigo-950
+) !default;
+
+// Purples.
+$purples: (
+  "purple-50":  $purple-50,
+  "purple-100": $purple-100,
+  "purple-200": $purple-200,
+  "purple-300": $purple-300,
+  "purple-400": $purple-400,
+  "purple-500": $purple-500,
+  "purple-600": $purple-600,
+  "purple-700": $purple-700,
+  "purple-800": $purple-800,
+  "purple-900": $purple-900,
+  "purple-950": $purple-950
+) !default;
+
+// Pinks.
+$pinks: (
+  "pink-50":  $pink-50,
+  "pink-100": $pink-100,
+  "pink-200": $pink-200,
+  "pink-300": $pink-300,
+  "pink-400": $pink-400,
+  "pink-500": $pink-500,
+  "pink-600": $pink-600,
+  "pink-700": $pink-700,
+  "pink-800": $pink-800,
+  "pink-900": $pink-900,
+  "pink-950": $pink-950
+) !default;
+
+// Reds
+$reds: (
+  "red-50":  $red-50,
+  "red-100": $red-100,
+  "red-200": $red-200,
+  "red-300": $red-300,
+  "red-400": $red-400,
+  "red-500": $red-500,
+  "red-600": $red-600,
+  "red-700": $red-700,
+  "red-800": $red-800,
+  "red-900": $red-900,
+  "red-950": $red-950
+) !default;
+
+// Oranges
+$oranges: (
+  "orange-50":  $orange-50,
+  "orange-100": $orange-100,
+  "orange-200": $orange-200,
+  "orange-300": $orange-300,
+  "orange-400": $orange-400,
+  "orange-500": $orange-500,
+  "orange-600": $orange-600,
+  "orange-700": $orange-700,
+  "orange-800": $orange-800,
+  "orange-900": $orange-900,
+  "orange-950": $orange-950
+) !default;
+
+// Yellows
+$yellows: (
+  "yellow-50":  $yellow-50,
+  "yellow-100": $yellow-100,
+  "yellow-200": $yellow-200,
+  "yellow-300": $yellow-300,
+  "yellow-400": $yellow-400,
+  "yellow-500": $yellow-500,
+  "yellow-600": $yellow-600,
+  "yellow-700": $yellow-700,
+  "yellow-800": $yellow-800,
+  "yellow-900": $yellow-900,
+  "yellow-950": $yellow-950
+) !default;
+
+// Greens
+$greens: (
+  "green-50":  $green-50,
+  "green-100": $green-100,
+  "green-200": $green-200,
+  "green-300": $green-300,
+  "green-400": $green-400,
+  "green-500": $green-500,
+  "green-600": $green-600,
+  "green-700": $green-700,
+  "green-800": $green-800,
+  "green-900": $green-900,
+  "green-950": $green-950
+) !default;
+
+// Teals
+$teals: (
+  "teal-50":  $teal-50,
+  "teal-100": $teal-100,
+  "teal-200": $teal-200,
+  "teal-300": $teal-300,
+  "teal-400": $teal-400,
+  "teal-500": $teal-500,
+  "teal-600": $teal-600,
+  "teal-700": $teal-700,
+  "teal-800": $teal-800,
+  "teal-900": $teal-900,
+  "teal-950": $teal-950
+) !default;
+
+// Cyans
+$cyans: (
+  "cyan-50":  $cyan-50,
+  "cyan-100": $cyan-100,
+  "cyan-200": $cyan-200,
+  "cyan-300": $cyan-300,
+  "cyan-400": $cyan-400,
+  "cyan-500": $cyan-500,
+  "cyan-600": $cyan-600,
+  "cyan-700": $cyan-700,
+  "cyan-800": $cyan-800,
+  "cyan-900": $cyan-900,
+  "cyan-950": $cyan-950
+) !default;
+
+// Grays
+$grays: (
+  "gray-50":  $gray-50,
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  "gray-300": $gray-300,
+  "gray-400": $gray-400,
+  "gray-500": $gray-500,
+  "gray-600": $gray-600,
+  "gray-700": $gray-700,
+  "gray-800": $gray-800,
+  "gray-900": $gray-900,
+  "gray-950": $gray-950
+) !default;
+
+// Roses
+$roses: (
+  "rose-50":  $rose-50,
+  "rose-100": $rose-100,
+  "rose-200": $rose-200,
+  "rose-300": $rose-300,
+  "rose-400": $rose-400,
+  "rose-500": $rose-500,
+  "rose-600": $rose-600,
+  "rose-700": $rose-700,
+  "rose-800": $rose-800,
+  "rose-900": $rose-900,
+  "rose-950": $rose-950
+) !default;
+
+// Fuchsias
+$fuchsias: (
+  "fuchsia-50":  $fuchsia-50,
+  "fuchsia-100": $fuchsia-100,
+  "fuchsia-200": $fuchsia-200,
+  "fuchsia-300": $fuchsia-300,
+  "fuchsia-400": $fuchsia-400,
+  "fuchsia-500": $fuchsia-500,
+  "fuchsia-600": $fuchsia-600,
+  "fuchsia-700": $fuchsia-700,
+  "fuchsia-800": $fuchsia-800,
+  "fuchsia-900": $fuchsia-900,
+  "fuchsia-950": $fuchsia-950
+) !default;
+
+// Violets
+$violets: (
+  "violet-50":  $violet-50,
+  "violet-100": $violet-100,
+  "violet-200": $violet-200,
+  "violet-300": $violet-300,
+  "violet-400": $violet-400,
+  "violet-500": $violet-500,
+  "violet-600": $violet-600,
+  "violet-700": $violet-700,
+  "violet-800": $violet-800,
+  "violet-900": $violet-900,
+  "violet-950": $violet-950
+) !default;
+
+// Skies
+$skies: (
+  "sky-50":  $sky-50,
+  "sky-100": $sky-100,
+  "sky-200": $sky-200,
+  "sky-300": $sky-300,
+  "sky-400": $sky-400,
+  "sky-500": $sky-500,
+  "sky-600": $sky-600,
+  "sky-700": $sky-700,
+  "sky-800": $sky-800,
+  "sky-900": $sky-900,
+  "sky-950": $sky-950
+) !default;
+
+// Emeralds
+$emeralds: (
+  "emerald-50":  $emerald-50,
+  "emerald-100": $emerald-100,
+  "emerald-200": $emerald-200,
+  "emerald-300": $emerald-300,
+  "emerald-400": $emerald-400,
+  "emerald-500": $emerald-500,
+  "emerald-600": $emerald-600,
+  "emerald-700": $emerald-700,
+  "emerald-800": $emerald-800,
+  "emerald-900": $emerald-900,
+  "emerald-950": $emerald-950
+) !default;
+
+// Limes
+$limes: (
+  "lime-50":  $lime-50,
+  "lime-100": $lime-100,
+  "lime-200": $lime-200,
+  "lime-300": $lime-300,
+  "lime-400": $lime-400,
+  "lime-500": $lime-500,
+  "lime-600": $lime-600,
+  "lime-700": $lime-700,
+  "lime-800": $lime-800,
+  "lime-900": $lime-900,
+  "lime-950": $lime-950
+) !default;
+
+// Ambers
+$ambers: (
+  "amber-50":  $amber-50,
+  "amber-100": $amber-100,
+  "amber-200": $amber-200,
+  "amber-300": $amber-300,
+  "amber-400": $amber-400,
+  "amber-500": $amber-500,
+  "amber-600": $amber-600,
+  "amber-700": $amber-700,
+  "amber-800": $amber-800,
+  "amber-900": $amber-900,
+  "amber-950": $amber-950
+) !default;
+
+// Slates
+$slates: (
+  "slate-50":  $slate-50,
+  "slate-100": $slate-100,
+  "slate-200": $slate-200,
+  "slate-300": $slate-300,
+  "slate-400": $slate-400,
+  "slate-500": $slate-500,
+  "slate-600": $slate-600,
+  "slate-700": $slate-700,
+  "slate-800": $slate-800,
+  "slate-900": $slate-900,
+  "slate-950": $slate-950
+) !default;
+// @formatter:on
+
+// Alt Colors.
+$tiffany:            #00adb5 !default;
+$arsenic:            #393e46 !default;
+$charcoal:           #222831 !default;
+$smoke:              #eeeeee !default;
+$jakarta:            #412b6b !default;
+$plum:               #5c3e94 !default;
+$oriole:             #f25912 !default;
+$biscay:             #1a3d64 !default;
+$blumine:            #1d546c !default;
+$buttercup:          #f5ad18 !default;
+$asparagus:          #84994f !default;
+$oat:                #e3dacc !default;
+$cactus:             #bcd1ca !default;
+$bluesky:            #6a9bcc !default;
+$heather:            #cbcadb !default;
+$fig:                #c46686 !default;
+$coral:              #ebcece !default;
+$olive:              #788c5d !default;
+$autumn:             #c6613f !default;
+$clay:               #d97757 !default;
+$manilla:            #ebdbbc !default;
+$cloud-light:        #d1cfc5 !default;
+$cloud-medium:       #b0aea5 !default;
+$cloud-dark:         #87867f !default;
+$kraft:              #d4a27f !default;
+
+// @formatter:off
+// Alt Colors.
+$alt-colors: (
+  "tiffany": $tiffany,
+  "arsenic": $arsenic,
+  "charcoal": $charcoal,
+  "smoke": $smoke,
+  "jakarta": $jakarta,
+  "plum": $plum,
+  "oriole": $oriole,
+  "biscay": $biscay,
+  "blumine": $blumine,
+  "buttercup": $buttercup,
+  "asparagus": $asparagus,
+  "oat": $oat,
+  "cactus": $cactus,
+  "bluesky": $bluesky,
+  "heather": $heather,
+  "fig": $fig,
+  "coral": $coral,
+  "olive": $olive,
+  "autumn": $autumn,
+  "clay": $clay,
+  "manilla": $manilla,
+  "cloud-light": $cloud-light,
+  "cloud-medium": $cloud-medium,
+  "cloud-dark": $cloud-dark,
+  "kraft": $kraft
+) !default;
+// Color Map
+$colors: (
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "gray": $gray,
+  "rose": $rose,
+  "fuchsia": $fuchsia,
+  "violet": $violet,
+  "sky": $sky,
+  "emerald": $emerald,
+  "lime": $lime,
+  "amber": $amber,
+  "slate": $slate,
+) !default;
+
+// All Colors
+$all-colors: (
+  "blues": $blues,
+  "indigos": $indigos,
+  "purples": $purples,
+  "pinks": $pinks,
+  "reds": $reds,
+  "oranges": $oranges,
+  "yellows": $yellows,
+  "greens": $greens,
+  "teals": $teals,
+  "cyans": $cyans,
+  "grays": $grays,
+  "roses": $roses,
+  "fuchsias": $fuchsias,
+  "violets": $violets,
+  "skies": $skies,
+  "emeralds": $emeralds,
+  "limes": $limes,
+  "ambers": $ambers,
+  "slates": $slates,
+) !default;
+// @formatter:on
+
+// Brands
+$github:             #4078c0 !default;
+$facebook:           #1877f2 !default;
+$facebook-f:         $facebook !default;
+$linkedin:           #0a66c2 !default;
+$linkedin-in:        $linkedin !default;
+$discord:            #5865f2 !default;
+$slack:              #6ecadc !default;
+$figma:              #ff3733 !default;
+$youtube:            #ff0000 !default;
+$reddit:             #ff4500 !default;
+$apple:              #000000 !default;
+$google:             #4285f4 !default;
+$twitch:             #9146ff !default;
+$dropbox:            #007ee5 !default;
+$airbnb:             #fd5c63 !default;
+$instagram:          #405de6 !default;
+$tiktok:             #000000 !default;
+$dribbble:           #ea4c89 !default;
+$medium:             #00ab6c !default;
+$vimeo:              #1ab7ea !default;
+$whatsapp:           #25d366 !default;
+$telegram:           #0088cc !default;
+$pinterest:          #e60023 !default;
+$soundcloud:         #ff8800 !default;
+$google-play:        #34a853 !default;
+$skype:              #00aff0 !default;
+$etsy:               #d5641c !default;
+$amazon:             #ff9900 !default;
+$spotify:            #1db954 !default;
+$microsoft:          #00a1f1 !default;
+$elementor:          #ff7be6 !default;
+$playstation:        #003087 !default;
+$yelp:               #af0606 !default;
+$xbox:               #52b043 !default;
+$x-twitter:          #14171a !default;
+$tumblr:             #35465c !default;
+$threads:            #101010 !default;
+$steam:              #1b2838 !default;
+$snapchat:           #fffc00 !default;
+$safari:             #1b2095 !default;
+$patreon:            #f96854 !default;
+$opera:              #cc0f16 !default;
+$openai:             #000000 !default;
+$meta:               #0082fb !default;
+$mastodon:           #615ef8 !default;
+$mailchimp:          #239ab9 !default;
+$hubspot:            #ff4800 !default;
+$houzz:              #7ac142 !default;
+$google-drive:       #ea4335 !default;
+$goodreads:          #553b08 !default;
+$flickr:             #ff0084 !default;
+$firefox:            #e66000 !default;
+$chrome:             #1974e7 !default;
+$brave:              #ff4a01 !default;
+$bluesky:            #006afe !default;
+$blogger:            #f57d00 !default;
+$audible:            $amazon !default;
+$app-store:          $apple !default;
+
+// @formatter:off
+$brands: (
+  "github":       $github,
+  "facebook":     $facebook,
+  "facebook-f":   $facebook-f,
+  "linkedin":     $linkedin,
+  "linkedin-in":  $linkedin-in,
+  "discord":      $discord,
+  "slack":        $slack,
+  "figma":        $figma,
+  "youtube":      $youtube,
+  "reddit":       $reddit,
+  "apple":        $apple,
+  "google":       $google,
+  "twitch":       $twitch,
+  "dropbox":      $dropbox,
+  "airbnb":       $airbnb,
+  "instagram":    $instagram,
+  "tiktok":       $tiktok,
+  "dribbble":     $dribbble,
+  "medium":       $medium,
+  "whatsapp":     $whatsapp,
+  "telegram":     $telegram,
+  "pinterest":    $pinterest,
+  "soundcloud":   $soundcloud,
+  "google-play":  $google-play,
+  "skype":        $skype,
+  "etsy":         $etsy,
+  "amazon":       $amazon,
+  "spotify":      $spotify,
+  "microsoft":    $microsoft,
+  "elementor":    $elementor,
+  "playstation":  $playstation,
+  "yelp":         $yelp,
+  "xbox":         $xbox,
+  "x-twitter":    $x-twitter,
+  "vimeo":        $vimeo,
+  "tumblr":       $tumblr,
+  "threads":      $threads,
+  "steam":        $steam,
+  "snapchat":     $snapchat,
+  "safari":       $safari,
+  "patreon":      $patreon,
+  "opera":        $opera,
+  "openai":       $openai,
+  "meta":         $meta,
+  "mastodon":     $mastodon,
+  "mailchimp":    $mailchimp,
+  "hubspot":      $hubspot,
+  "houzz":        $houzz,
+  "google-drive": $google-drive,
+  "goodreads":    $goodreads,
+  "flickr":       $flickr,
+  "firefox":      $firefox,
+  "chrome":       $chrome,
+  "brave":        $brave,
+  "bluesky":      $bluesky,
+  "blogger":      $blogger,
+  "audible":      $audible,
+  "app-store":      $app-store
+) !default;
+// @formatter:on
+
+// Payments
+$stripe:             #00afe1 !default;
+$shopify:            #96bf48 !default;
+$paypal:             #003087 !default;
+$cc-visa:            #f7b600 !default;
+$cc-mastercard:      #eb001b !default;
+$google-pay:         $google !default;
+$ethereum:           #74a8da !default;
+$cc-stripe:          $stripe !default;
+$cc-paypal:          $paypal !default;
+$cc-jcb:             #0077d3 !default;
+$cc-discover:        #e86c26 !default;
+$cc-diners-club:     #004f9c !default;
+$cc-apple-pay:       #5fc9f8 !default;
+$cc-amex:            #002663 !default;
+$cc-amazon-pay:      $amazon !default;
+$cash-app:           #02e011 !default;
+$btc:                #f7931b !default;
+$apple-pay:          #5fc9f8 !default;
+$amazon-pay:         $amazon !default;
+
+// @formatter:off
+$payment-brands: (
+  "stripe":         $stripe,
+  "shopify":        $shopify,
+  "paypal":         $paypal,
+  "cc-visa":        $cc-visa,
+  "cc-mastercard":  $cc-mastercard,
+  "google-pay":     $google-pay,
+  "cc-stripe":      $cc-stripe,
+  "cc-paypal":      $cc-paypal,
+  "cc-jcb":         $cc-jcb,
+  "cc-discover":    $cc-discover,
+  "cc-diners-club": $cc-diners-club,
+  "cc-apple-pay":   $cc-apple-pay,
+  "cc-amex":        $cc-amex,
+  "cc-amazon-pay":  $cc-amazon-pay,
+  "cash-app":       $cash-app,
+  "btc":            $btc,
+  "apple-pay":      $apple-pay,
+  "amazon-pay":     $amazon-pay
+) !default;
+// @formatter:on
+
+// Shipping
+$usps:               #333366 !default;
+$ups:                #351c15 !default;
+$fedex:              #4d148c !default;
+$dhl:                #ba0c2f !default;
+
+// @formatter:off
+$shipping-brands: (
+  "usps":   $usps,
+  "ups":    $ups,
+  "fedex":  $fedex,
+  "dhl":    $dhl
+) !default;
+// @formatter:on
+
+// Development
+$docker:             #0db7ed !default;
+$codepen:            #0ebeff !default;
+$cloudflare:         #f38020 !default;
+$wordpress:          #21759b !default;
+$windows:            #0078d7 !default;
+$stack-overflow:     #f48024 !default;
+$android:            #a4c639 !default;
+$html5:              #e34f26 !default;
+$react:              #00d8ff !default;
+$java:               #3a75af !default;
+$python:             #ffde57 !default;
+$linux:              #1793d1 !default;
+$gitlab:             #fca326 !default;
+$wordpress-simple:   $wordpress !default;
+$w3c:                #135c91 !default;
+$vuejs:              #42b883 !default;
+$unity:              #00cccc !default;
+$ubuntu:             #dd4814 !default;
+$uikit:              #218ff1 !default;
+$swift:              $apple !default;
+$symfony:            #1b4fd9 !default;
+$sass:               #bf6d95 !default;
+$rust:               #0b7261 !default;
+$php:                #8892be !default;
+$phoenix-framework:  #fb4f05 !default;
+$npm:                #cb3837 !default;
+$node-js:            #215732 !default;
+$markdown:           #309fe6 !default;
+$js:                 #f7df1e !default;
+$jsfiddle:           #feb229 !default;
+$gulp:               #ce4646 !default;
+$grunt:              #fba919 !default;
+$golang:             #007d9d !default;
+$git:                #333333 !default;
+$debian:             #a80030 !default;
+$css3:               #2693ce !default;
+$css:                #04a96d !default;
+$bootstrap:          #7431fa !default;
+$aws:                $amazon !default;
+$angular:            #b52e31 !default;
+$laravel:            #f55247 !default;
+$flutter:            #1674fc !default;
+
+// @formatter:off
+$development-brands: (
+  "docker":             $docker,
+  "codepen":            $codepen,
+  "cloudflare":         $cloudflare,
+  "wordpress":          $wordpress,
+  "windows":            $windows,
+  "stack-overflow":     $stack-overflow,
+  "android":            $android,
+  "html5":              $html5,
+  "react":              $react,
+  "java":               $java,
+  "python":             $python,
+  "linux":              $linux,
+  "gitlab":             $gitlab,
+  "wordpress-simple":   $wordpress-simple,
+  "w3c":                $w3c,
+  "vuejs":              $vuejs,
+  "unity":              $unity,
+  "ubuntu":             $ubuntu,
+  "uikit":              $uikit,
+  "swift":              $swift,
+  "symfony":            $symfony,
+  "sass":               $sass,
+  "rust":               $rust,
+  "php":                $php,
+  "phoenix-framework":  $phoenix-framework,
+  "npm":                $npm,
+  "node-js":            $node-js,
+  "markdown":           $markdown,
+  "js":                 $js,
+  "jsfiddle":           $jsfiddle,
+  "gulp":               $gulp,
+  "grunt":              $grunt,
+  "golang":             $golang,
+  "git":                $git,
+  "debian":             $debian,
+  "css3":               $css3,
+  "css":                $css,
+  "bootstrap":          $bootstrap,
+  "aws":                $aws,
+  "angular":            $angular,
+  "laravel":            $laravel,
+  "flutter":            $flutter
+) !default;
+// @formatter:on

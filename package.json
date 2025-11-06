@@ -1,0 +1,53 @@
+{
+  "name": "revolux",
+  "version": "0.1.0",
+  "description": "A Modern, Modular, and Multipurpose Professional WordPress Theme For the Trades Industries.",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build:dev": "composer update && composer install && wp-scripts build --env=developmentWithWatch",
+    "build:prod": "composer install --no-dev && wp-scripts build --env=production",
+    "clean:build": "rimraf assets && rimraf $npm_package_name",
+    "build:dir": "npm run clean:build && npm run build:prod && rsync -av --exclude-from=.buildignore . $npm_package_name",
+    "package": "npm run clean:build && npm run build:prod && rsync -av --exclude-from=.buildignore . $npm_package_name",
+    "package:zip": "npm run package && zip -r $npm_package_name.$npm_package_version.zip ./$npm_package_name/*",
+    "zip": "npm run clean:build && npm run build:prod && rsync -av --exclude-from=.buildignore . $npm_package_name && zip -r $npm_package_name.$npm_package_version.zip $npm_package_name/*",
+    "wp-env:start": "wp-env start",
+    "wp-env:stop": "wp-env stop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smg058/revolux-wp.git"
+  },
+  "keywords": [],
+  "author": "chayson",
+  "license": "GPL-2.0-or-later",
+  "packageManager": "pnpm@10.18.2",
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.4",
+    "@elementor/wp-lite-env": "^0.0.20",
+    "@wordpress/components": "^30.7.0",
+    "@wordpress/env": "^10.34.0",
+    "@wordpress/i18n": "^6.7.0",
+    "@wordpress/notices": "^5.34.0",
+    "@wordpress/scripts": "^30.27.0",
+    "copy-webpack-plugin": "^13.0.1",
+    "cpx": "^1.5.0",
+    "dotenv": "^17.2.3",
+    "rimraf": "^6.1.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-remove-empty-scripts": "^1.1.1"
+  },
+  "dependencies": {
+    "@elementor/icons": "^1.59.0",
+    "@elementor/ui": "^1.37.1",
+    "@fontsource-variable/lexend": "^5.2.11",
+    "@fontsource-variable/outfit": "^5.2.8",
+    "@fontsource-variable/source-serif-4": "^5.2.9",
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "@phosphor-icons/web": "^2.1.2",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8",
+    "html-entities": "^2.6.0",
+    "sass": "^1.93.3"
+  }
+}
