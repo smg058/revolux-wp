@@ -5,7 +5,7 @@
  *
  * A modern, modular, and multipurpose professional WordPress theme.
  *
- * @version     0.1.0
+ * @version     0.2.0
  * @package     revolux
  * @author      Chayson Media <dev@chayson.com>
  * @filesource  functions.php
@@ -36,3 +36,28 @@ define( 'REVOLUX_LANG', REVOLUX_DIR . 'languages' );
 define( 'REVOLUX_ASSETS_DIR', trailingslashit( REVOLUX_DIR . 'assets' ) );
 define( 'REVOLUX_ASSETS_URI', trailingslashit( REVOLUX_URI . 'assets' ) );
 define( 'REVOLUX_DEBUG', defined( 'WP_DEBUG' ) && WP_DEBUG );
+
+// Bundled plugin directory.
+define( 'REVOLUX_PLUGINS', trailingslashit( REVOLUX_INC . 'extend/plugins' ) );
+
+// Autoloader with fallback.
+require_once REVOLUX_CORE . 'Autoloader.php';
+
+// Initialize autoloader.
+$revolux_autoloader = new Revolux\Core\Autoloader();
+$revolux_autoloader->register();
+
+/**
+ * Load helper functions
+ *
+ * Helper functions should be loaded before the theme initializes so
+ * they're available throughout the theme.
+ */
+require_once REVOLUX_INC . 'helpers/customizer-helpers.php';
+
+/**
+ * Initializes the theme.
+ *
+ * Get the singleton instance of the Theme class.
+ */
+Revolux\Core\Theme::instance();

@@ -297,7 +297,8 @@ $border-widths: (
 
 $border-style:                                solid !default;
 $border-color:                                $gray-300 !default;
-$border-color-translucent:                    rgba($black, .175) !default$border-radius: .375rem !default;
+$border-color-translucent:                    rgba($black, .175) !default;
+$border-radius:                               .375rem !default;
 $border-radius-sm:                            .25rem !default;
 $border-radius-lg:                            .5rem !default;
 $border-radius-xl:                            1rem !default;

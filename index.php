@@ -5,7 +5,7 @@
  *
  * A modern, modular, and multipurpose professional WordPress theme.
  *
- * @version     0.1.0
+ * @version     0.2.0
  * @package     revolux
  * @author      Chayson Media <dev@chayson.com>
  * @filesource  index.php
@@ -22,30 +22,41 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
-		<?php
-		if ( have_posts() ) :
+	<div class="entry-content rev-entry-content">
+		<div class="container">
+			<div class="row">
+				<div id="primary" class="content-area rev-content-area">
+					<main id="site-main" class="rev-main" role="main">
 
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header class="page-header">
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php
-			endif;
+						<?php
+						if ( have_posts() ) :
 
-			while ( have_posts() ) :
-				the_post();
-				get_template_part( 'template-parts/content', get_post_type() );
-			endwhile;
+							while ( have_posts() ) :
+								the_post();
 
-			the_posts_navigation();
+								/**
+								 * Include post-type specific template for the content.
+								 */
+								get_template_part( 'template-parts/content', get_post_type() );
 
-		else :
-			get_template_part( 'template-parts/content', 'none' );
-		endif;
-		?>
-	</main>
+							endwhile;
+
+							the_posts_navigation();
+
+						else :
+
+							get_template_part( 'template-parts/content', 'none' );
+
+						endif;
+						?>
+
+					</main><!-- (end) #site-main -->
+				</div><!-- (end) #primary -->
+
+				<?php get_sidebar(); ?>
+			</div><!-- (end) .row -->
+		</div><!-- (end) .container -->
+	</div><!-- (end) .rev-entry-content -->
 
 <?php
-get_sidebar();
 get_footer();
